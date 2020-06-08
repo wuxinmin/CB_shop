@@ -5,7 +5,9 @@ import Login from './../components/Login'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: './login', component: Login }
+  // 路由重定向
+  { path: '/', redirect: '/login' },
+  { path: '/login', component: Login }
 ]
 
 const router = new VueRouter({
